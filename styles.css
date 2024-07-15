@@ -1,9 +1,19 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
+    color: #333;
+    background-color: #e6f0ff; /* Light blue background */
+}
+
+/* Header Styles */
+.header-container {
+    height: 100%;
+    background-image: url("images/Rectangle 51.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #004080; /* Dark blue background */
 }
 
 header {
@@ -11,44 +21,43 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    background: #FD6F00;
-
+    color: #ffd700; /* Gold color */
 }
-nav{
+
+nav {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
 }
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-    }
-    
-    nav a {
-        color: #fff;
-        text-decoration: none;
-    }
 
-
-.btn {
-    background-color: orange;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
+nav a {
+    color: #ffd700; /* Gold color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffa500; /* Orange color */
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 50px 20px;
+    background-color: #004080; /* Dark blue background */
+    color: #fff;
 }
 
 .hero img {
@@ -60,6 +69,7 @@ nav{
 .hero h1 {
     font-size: 32px;
     margin: 20px 0;
+    color: #ffd700; /* Gold color */
 }
 
 .hero p {
@@ -72,23 +82,147 @@ nav{
 }
 
 .buttons .btn {
-    margin: 0 10px;
-}
-
-.social a {
-    margin: 0 5px;
-    color: #fff;
+    background-color: #ffd700; /* Gold color */
+    color: #004080; /* Dark blue text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s;
 }
 
+.buttons .btn:hover {
+    background-color: #ffa500; /* Orange color */
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social .icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Banner Section */
+.banner-title h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin: 40px 0;
+    color: #004080; /* Dark blue text */
+}
+
+.banner-desc {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 40px 0;
+    color: #004080; /* Dark blue text */
+}
+
+.banner-profile-container {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #004080; /* Dark blue border */
+    border-bottom: 1px solid #004080; /* Dark blue border */
+    padding: 20px;
+    background-color: #e6f0ff; /* Light blue background */
+}
+
+.banner-profile-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    color: #004080; /* Dark blue text */
+}
+.banner-work{
+    display: flex;
+}
+.banner-image-container {
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.banner-image {
+    height: 300px;
+}
+
+/* Career Goals Section */
+#career {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #004080; /* Dark blue background */
+    color: #fff;
+}
+
+#career h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffd700; /* Gold color */
+}
+
+#career p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e6f0ff; /* Light blue background */
+    color: #333;
+}
+
+#skills h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #004080; /* Dark blue text */
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#skills li {
+    background-color: #ffd700; /* Gold background */
+    color: #004080; /* Dark blue text */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#skills li:hover {
+    background-color: #ffa500; /* Orange background on hover */
+}
+
+/* Section Styles */
 .about, .awards, .portfolio, .contact {
     padding: 50px 20px;
     text-align: center;
+    background-color: #e6f0ff; /* Light blue background */
+    color: #333;
 }
 
 h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #004080; /* Dark blue text */
 }
 
 .experience, .projects {
@@ -97,19 +231,26 @@ h2 {
     gap: 20px;
     flex-wrap: wrap;
 }
-
-.job, .project {
+.project img{
+width: 50%;
+height: 50%;
+}
+.job ,.project{
     width: 30%;
-    background-color: #444;
+    background-color: #ffd700; /* Gold background */
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #004080; /* Dark blue text */
 }
 
 .award {
-    background-color: #444;
+    background-color: #ffa500; /* Orange background */
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #004080; /* Dark blue text */
 }
 
 form {
@@ -117,28 +258,53 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     align-self: flex-start;
+    color: #004080; /* Dark blue text */
 }
 
 form input, form textarea {
     width: 100%;
     max-width: 400px;
     padding: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+form button {
+    background-color: #ffd700; /* Gold background */
+    color: #004080; /* Dark blue text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ffa500; /* Orange background */
+}
+
+/* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #004080; /* Dark blue background */
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 footer nav ul {
     justify-content: center;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
     margin: 20px 0;
 }
 
@@ -148,4 +314,11 @@ footer p {
 
 footer .social a {
     margin: 0 10px;
+    color: #ffd700; /* Gold color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #ffa500; /* Orange color */
 }
