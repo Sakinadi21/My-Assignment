@@ -380,8 +380,13 @@ footer .social a:hover {
         max-width: 100%;
         height: auto;
     }
+    .project{
+        height: 60%;
+        width: 60%;
+        font-size: 10px;
+    }
 
-    .job, .project {
+    .job  {
         width: 100%;
         text-align: center; /* Center align for smaller screens */
     }
