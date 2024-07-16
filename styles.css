@@ -4,16 +4,14 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #e6f0ff; /* Light blue background */
+    background-color: var(--background-color);
 }
 
 /* Header Styles */
 .header-container {
-    height: 100%;
-    background-image: url("images/Rectangle 51.png");
     background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #004080; /* Dark blue background */
+    background-position: center;
+    background-color: var(--font-primary-color);
 }
 
 header {
@@ -26,7 +24,7 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #ffd700; /* Gold color */
+    color: var(--primary-color);
 }
 
 nav {
@@ -43,20 +41,20 @@ nav ul {
 }
 
 nav a {
-    color: #ffd700; /* Gold color */
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffa500; /* Orange color */
+    color: var(--secondary-color);
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #004080; /* Dark blue background */
+    background-color: var(--font-primary-color);
     color: #fff;
 }
 
@@ -67,13 +65,13 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 32px;
+    font-size: 60px;
     margin: 20px 0;
-    color: #ffd700; /* Gold color */
+    color: var(--primary-color);
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
@@ -82,8 +80,8 @@ nav a:hover {
 }
 
 .buttons .btn {
-    background-color: #ffd700; /* Gold color */
-    color: #004080; /* Dark blue text */
+    background-color: var(--primary-color);
+    color: var(--font-primary-color);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -93,7 +91,7 @@ nav a:hover {
 }
 
 .buttons .btn:hover {
-    background-color: #ffa500; /* Orange color */
+    background-color: var(--secondary-color);
 }
 
 .social {
@@ -103,18 +101,18 @@ nav a:hover {
 }
 
 .social .icon {
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
 }
 
 /* Banner Section */
 .banner-title h1 {
-    font-size: 50px;
+    font-size: 70px;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 5px;
     margin: 40px 0;
-    color: #004080; /* Dark blue text */
+    color: var(--font-primary-color);
 }
 
 .banner-desc {
@@ -122,54 +120,59 @@ nav a:hover {
     text-transform: uppercase;
     font-weight: bolder;
     margin: 40px 0;
-    color: #004080; /* Dark blue text */
+    color: var(--font-primary-color);
 }
 
 .banner-profile-container {
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid #004080; /* Dark blue border */
-    border-bottom: 1px solid #004080; /* Dark blue border */
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
     padding: 20px;
-    background-color: #e6f0ff; /* Light blue background */
+    background-color: var(--background-color);
 }
 
 .banner-profile-desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 40px;
-    color: #004080; /* Dark blue text */
+    font-size: 50px;
+    color: var(--font-primary-color);
 }
-.banner-work{
+
+.banner-work {
     display: flex;
 }
+
 .banner-image-container {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
+    text-align: center; /* Center align for smaller screens */
 }
 
 .banner-image {
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Career Goals Section */
 #career {
     padding: 50px 20px;
     text-align: center;
-    background-color: #004080; /* Dark blue background */
+    background-color: var(--font-primary-color);
     color: #fff;
 }
 
 #career h2 {
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 20px;
-    color: #ffd700; /* Gold color */
+    color: var(--primary-color);
 }
 
 #career p {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.6;
 }
 
@@ -177,14 +180,14 @@ nav a:hover {
 #skills {
     padding: 50px 20px;
     text-align: center;
-    background-color: #e6f0ff; /* Light blue background */
+    background-color: var(--background-color);
     color: #333;
 }
 
 #skills h2 {
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 20px;
-    color: #004080; /* Dark blue text */
+    color: var(--font-primary-color);
 }
 
 #skills ul {
@@ -197,8 +200,9 @@ nav a:hover {
 }
 
 #skills li {
-    background-color: #ffd700; /* Gold background */
-    color: #004080; /* Dark blue text */
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: var(--font-primary-color);
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
@@ -208,21 +212,21 @@ nav a:hover {
 }
 
 #skills li:hover {
-    background-color: #ffa500; /* Orange background on hover */
+    background-color: var(--secondary-color);
 }
 
 /* Section Styles */
 .about, .awards, .portfolio, .contact {
     padding: 50px 20px;
     text-align: center;
-    background-color: #e6f0ff; /* Light blue background */
+    background-color: var(--background-color);
     color: #333;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 20px;
-    color: #004080; /* Dark blue text */
+    color: var(--font-primary-color);
 }
 
 .experience, .projects {
@@ -231,26 +235,32 @@ h2 {
     gap: 20px;
     flex-wrap: wrap;
 }
-.project img{
-width: 50%;
-height: 50%;
-}
-.job ,.project{
-    width: 30%;
-    background-color: #ffd700; /* Gold background */
+
+.job, .project {
+    font-size: 30px;
+    width: 45%;
+    background-color: var(--primary-color);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #004080; /* Dark blue text */
+    color: var(--font-primary-color);
+    text-align: center; /* Center align for smaller screens */
+}
+
+.project img {
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
 }
 
 .award {
-    background-color: #ffa500; /* Orange background */
+    font-size: 30px;
+    background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #004080; /* Dark blue text */
+    color: var(--font-primary-color);
 }
 
 form {
@@ -258,7 +268,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -266,7 +276,7 @@ form {
 
 form label {
     align-self: flex-start;
-    color: #004080; /* Dark blue text */
+    color: var(--font-primary-color);
 }
 
 form input, form textarea {
@@ -278,8 +288,8 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #ffd700; /* Gold background */
-    color: #004080; /* Dark blue text */
+    background-color: var(--primary-color);
+    color: var(--font-primary-color);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -288,12 +298,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #ffa500; /* Orange background */
+    background-color: var(--secondary-color);
 }
 
 /* Footer Styles */
 footer {
-    background-color: #004080; /* Dark blue background */
+    background-color: var(--font-primary-color);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -314,11 +324,74 @@ footer p {
 
 footer .social a {
     margin: 0 10px;
-    color: #ffd700; /* Gold color */
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer .social a:hover {
-    color: #ffa500; /* Orange color */
+    color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Adjust the gap distance as needed */
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .buttons .btn {
+        padding: 8px 16px;
+        margin: 5px 0;
+    }
+
+    .banner-title h1 {
+        font-size: 40px;
+    }
+
+    .banner-desc {
+        font-size: 14px;
+    }
+
+    .banner-profile-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .banner-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .job, .project {
+        width: 100%;
+        text-align: center; /* Center align for smaller screens */
+    }
+
+    .portfolio, .about, .awards, .contact {
+        font-size: 14px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 10px; /* Adjust the gap distance as needed */
+    }
 }
